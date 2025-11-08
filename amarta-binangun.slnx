@@ -28,6 +28,6 @@
   <Project Path="Unity.Collections.CodeGen.csproj" />
   <Project Path="Unity.Mathematics.Editor.csproj" />
   <Project Path="Unity.2D.Tilemap.Extras.csproj" />
-  <Project Path="Unity.Collections.Editor.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Unity.Collections.Editor.csproj" />
 </Solution>
