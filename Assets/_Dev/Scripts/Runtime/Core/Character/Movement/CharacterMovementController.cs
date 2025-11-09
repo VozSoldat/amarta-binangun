@@ -1,19 +1,21 @@
 using DG.Tweening;
 using PolinemaNegeriMalang.AmartaBinangun.Core.OccupiableBoard;
+using PolinemaNegeriMalang.AmartaBinangun.Core.SequenceSystem;
 using UnityEngine;
 
 namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
 {
     public class CharacterMovementController : MonoBehaviour
     {
-        [SerializeField] private float _cellSize = 1; // temporary
-        [SerializeField] private float _moveDuration = 1;
 
         [SerializeField] private CharacterLocomotion _locomotion;
         [SerializeField] private CellOccupantController _cellOccupant;
         [SerializeField] private BoardController _board;
+
+        private bool _isMoving = false;
         private void Start()
         {
+            _locomotion.OnMoveComplete += () => { _isMoving = false; };
         }
 
         void Update()
@@ -38,7 +40,7 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
             Move(Vector3.left);
         }
 
-        private void Move(Vector3 direction )
+        private void Move(Vector3 direction)
         {
 
             if (_cellOccupant.CurrentCell == null) return;
@@ -47,12 +49,17 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
 
             var nextCell = _board.GetCell(newIndex);
 
-            if (nextCell != null && !nextCell.IsOccupied)
+            if (nextCell != null && !nextCell.IsOccupied && !_isMoving)
             {
+                _isMoving = true;
+                
                 _cellOccupant.MoveTo(nextCell);
 
                 _locomotion.Move(direction);
-            }else
+
+                SequenceManager.Instance.ProgressSequence();
+            }
+            else
             {
                 Debug.Log("Tidak bisa pindah — cell terisi!");
             }
