@@ -233,7 +233,7 @@ Struktur direktori HARUS mencerminkan pembagian tanggung jawab logis. Contoh:
                 │   ├── UI/
                 │   └── ...
                 ├── Core/
-                │   ├── Entity/
+                │   ├── Character/
                 │   │   ├── Player/
                 │   │   │   ├── PlayerMovementController.cs
                 │   │   │   └── ...
