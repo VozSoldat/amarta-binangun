@@ -7,7 +7,6 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.OccupiableBoard
     {
         public Cell CurrentCell;
 
-        [SerializeField]
         public void MoveTo(Cell targetCell)
         {
             if (targetCell == null || targetCell.IsOccupied)
