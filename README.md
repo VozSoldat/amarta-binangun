@@ -198,6 +198,14 @@ Kata-kata berikut HARUS ditafsirkan sebagaimana dijelaskan dalam [RFC 2119]:
 
 ---
 
+#### Atribut dan Anotasi Unity
+
+* `[SerializeField]`, `[Header]`, `[Tooltip]`, dan `[Range]` **SEBAIKNYA** digunakan untuk memperjelas editor.
+* Atribut **DILARANG** digunakan berlebihan atau tanpa alasan yang jelas.
+* Komponen yang wajib ada **SEBAIKNYA** ditandai dengan `[RequireComponent(typeof(...))]`.
+
+---
+
 ### Folder dan Modul Kode
 
 Struktur direktori HARUS mencerminkan pembagian tanggung jawab logis. Contoh:
@@ -205,12 +213,16 @@ Struktur direktori HARUS mencerminkan pembagian tanggung jawab logis. Contoh:
 ```
 .
 └── Assets/
-    └── _Dev/                               // tempat pengembang bekerja
+    └── _Dev/                 // tempat developer bekerja
         ├── Scenes/
         ├── Prefabs/
         ├── Art/
+        │   ├── Sprites/
+        │   │   ├── UI/
+        │   │   └── World/
+        │   └── Materials/
         └── Scripts/
-            ├── Editor
+            ├── Editor/
             └── Runtime/
                 ├── Common/
                 │   ├── Singletons/
@@ -235,21 +247,13 @@ Struktur direktori HARUS mencerminkan pembagian tanggung jawab logis. Contoh:
                     │   └── PlayerHealth.cs
                     └── ...
 ```
->[Tree](https://tree.nathanfriend.com/?s=(%27optiLs!(%27fancyB~fullPath!false~trailingSlashB~rootDotB)~J(%27J%276Assets32_Dev3GScenes7Prefabs7Art7Scripts3*GEditor3*GRuntime06CommL02SingletLsK2F04F8T*4FOnCollisiLW2UIK56Core02Entity04N0*4NMovement8WGEnemyK2UI0GVictoryPanelPresentN9*556SOInstanceT2VariableT4NHealth9Q3%27)~vNsiL!%271%27)*%20%2003***G*63%5Cn4GPlay5Q06-%207%2F3G8CLtrollN9.cTB!trueFSoundG*2Jsource!K%2F0LonNerQ2...Ts0W9**5%01WTQNLKJGFB987654320*)
+>[Selengkapnya](https://tree.nathanfriend.com/?s=(%27optiNs!(%27fancyG~fullPath!false~trailingSlashG~rootDotG)~L(%27L%276Assets52_Dev58Scene9Prefab9Art76SpriteQ2UI72World76MatKial9ScriptQ6Editor06Runtime02CommN08SingletNs78J03JBQ*3JOnCollisiNY8UI7T2Core08Entity03K0*3KMovementBYXEnemy78UI0XVictoryPanelPresentKF*TT2SOInstanceQ8VariableQ3KHealthF45%27)~vKsiN!%271%27)*%20%2005*X*63XPlay48...5%5Cn6-%207%2F08*29s%2F58BCNtrollKF.cQG!trueJSoundKerLsource!NonQs0T40X*8YF**T%01YXTQNLKJGFB987654320*)
 
 * Folder **Common** HARUS digunakan untuk skrip yang digunakan lintas modul.
 * Folder **SEBAIKNYA** menggunakan bentuk singular jika dibentuk berdasarkan konsep atau sifat.
 * Folder **SEBAIKNYA** menggunakan bentuk plural jika berupa koleksi (mis. `Scripts`, `Prefabs`).
     * Jika ragu, **SEBAIKNYA** menggunakan bentuk plural.
 * Folder **SEBAIKNYA** memiliki nama yang singkat dan deskriptif.
-
----
-
-### Atribut dan Anotasi Unity
-
-* `[SerializeField]`, `[Header]`, `[Tooltip]`, dan `[Range]` **SEBAIKNYA** digunakan untuk memperjelas editor.
-* Atribut **DILARANG** digunakan berlebihan atau tanpa alasan yang jelas.
-* Komponen yang wajib ada **SEBAIKNYA** ditandai dengan `[RequireComponent(typeof(...))]`.
 
 ---
 
