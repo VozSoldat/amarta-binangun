@@ -13,9 +13,17 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
         [SerializeField] private BoardController _board;
 
         private bool _isMoving = false;
-        private void Start()
+        private void OnEnable()
         {
-            _locomotion.OnMoveComplete += () => { _isMoving = false; };
+            if (_locomotion != null)
+                _locomotion.OnMoveComplete += () => { _isMoving = false; };
+        }
+        void OnDisable()
+        {
+            if (_locomotion != null)
+            {
+                _locomotion.OnMoveComplete -= () => { _isMoving = false; };
+            }
         }
 
         void Update()
@@ -52,12 +60,12 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
             if (nextCell != null && !nextCell.IsOccupied && !_isMoving)
             {
                 _isMoving = true;
-                
+
                 _cellOccupant.MoveTo(nextCell);
 
                 _locomotion.Move(direction);
 
-                SequenceManager.Instance.ProgressSequence();
+                SequenceManager.Instance?.ProgressSequence();
             }
             else
             {

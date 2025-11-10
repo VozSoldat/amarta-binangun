@@ -1,4 +1,5 @@
 using DG.Tweening;
+using PolinemaNegeriMalang.AmartaBinangun.Core.SequenceSystem;
 using UnityEngine;
 namespace PolinemaNegeriMalang.AmartaBinangun.Core.Flip
 {
@@ -9,6 +10,8 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Flip
         public void Flip()
         {
             _transform.DORotate(_transform.rotation.eulerAngles + new Vector3(0, 180, 0), 0.2f);
+
+            SequenceManager.Instance?.ProgressSequence();
         }
 
         void Update()
