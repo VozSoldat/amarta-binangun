@@ -65,7 +65,8 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
 
                 _locomotion.Move(direction);
 
-                SequenceManager.Instance?.ProgressSequence();
+                if(SequenceManager.Instance != null)
+                    SequenceManager.Instance.ProgressSequence();
             }
             else
             {
