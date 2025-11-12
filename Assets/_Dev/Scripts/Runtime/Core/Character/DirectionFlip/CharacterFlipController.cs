@@ -7,11 +7,19 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Flip
     public class CharacterFlipController : MonoBehaviour
     {
         [SerializeField] Transform _transform;
+        private bool _isFlipping = false;
         public void Flip()
         {
-            _transform.DORotate(_transform.rotation.eulerAngles + new Vector3(0, 180, 0), 0.2f);
+            if (_isFlipping)
+            {
+                return;
+            }
 
-            SequenceManager.Instance?.ProgressSequence();
+            _isFlipping = true;
+            _transform.DORotate(_transform.rotation.eulerAngles + new Vector3(0, 180, 0), 0.2f).OnComplete(() => { _isFlipping = false; });
+
+
+            SequenceManager.Instance.ProgressSequence();
         }
 
         void Update()
