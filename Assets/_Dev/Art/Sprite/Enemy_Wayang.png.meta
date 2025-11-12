@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 44d9911dcee08b24f8fda7658d6e310e
+guid: 06495e54b789b8f47a970c0263038d98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3287736402497064352
-    second: Werkudara_wayang_0
+      213: 2530210890072717632
+    second: Enemy_Wayang_0
   - first:
-      213: -2404526860778239762
-    second: Werkudara_wayang_1
+      213: 3147393945805978277
+    second: Enemy_Wayang_1
   - first:
-      213: -3956670211133453228
-    second: Werkudara_wayang_2
+      213: 525300838025677419
+    second: Enemy_Wayang_2
   - first:
-      213: -7729118690497370422
-    second: Werkudara_wayang_3
+      213: 5453582635355822865
+    second: Enemy_Wayang_3
   - first:
-      213: -498659129625318295
-    second: Werkudara_wayang_4
+      213: 5323342027291524483
+    second: Enemy_Wayang_4
   - first:
-      213: 2741011428456089998
-    second: Werkudara_wayang_5
+      213: 8415163930043534148
+    second: Enemy_Wayang_5
   - first:
-      213: 4333413607509697879
-    second: Werkudara_wayang_6
+      213: 1921259720304597336
+    second: Enemy_Wayang_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,155 +131,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Werkudara_wayang_0
+      name: Enemy_Wayang_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 65
+        width: 94
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 062ba0e392d9f52d0800000000000000
-      internalID: -3287736402497064352
+      spriteID: 049fb9d166d1d1320800000000000000
+      internalID: 2530210890072717632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Werkudara_wayang_1
+      name: Enemy_Wayang_1
       rect:
         serializedVersion: 2
-        x: 114
-        y: 47
-        width: 13
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 94
+        y: 0
+        width: 94
+        height: 117
+      alignment: 9
+      pivot: {x: 0.28315395, y: 0.5092845}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee88d625f8761aed0800000000000000
-      internalID: -2404526860778239762
+      spriteID: 5aafafb3e1acdab20800000000000000
+      internalID: 3147393945805978277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Werkudara_wayang_2
+      name: Enemy_Wayang_2
       rect:
         serializedVersion: 2
-        x: 202
-        y: 23
-        width: 12
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 188
+        y: 0
+        width: 94
+        height: 117
+      alignment: 9
+      pivot: {x: 0.2735362, y: 0.34701738}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45c450408651719c0800000000000000
-      internalID: -3956670211133453228
+      spriteID: b6a4cba345e3a4700800000000000000
+      internalID: 525300838025677419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Werkudara_wayang_3
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 48
-        width: 13
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac6621a6087acb490800000000000000
-      internalID: -7729118690497370422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Werkudara_wayang_4
-      rect:
-        serializedVersion: 2
-        x: 520
-        y: 24
-        width: 12
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96c6da2e9286419f0800000000000000
-      internalID: -498659129625318295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Werkudara_wayang_5
+      name: Enemy_Wayang_3
       rect:
         serializedVersion: 2
         x: 282
-        y: 18
-        width: 19
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 94
+        height: 117
+      alignment: 9
+      pivot: {x: 0.25350496, y: 0.17446865}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8949662f570a0620800000000000000
-      internalID: 2741011428456089998
+      spriteID: 11b5f9533840fab40800000000000000
+      internalID: 5453582635355822865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Werkudara_wayang_6
+      name: Enemy_Wayang_4
       rect:
         serializedVersion: 2
-        x: 600
-        y: 19
-        width: 19
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 376
+        y: 0
+        width: 94
+        height: 117
+      alignment: 9
+      pivot: {x: 0.63279986, y: 0.507544}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 755a57477b0632c30800000000000000
-      internalID: 4333413607509697879
+      spriteID: 38d7e9a9e5f40e940800000000000000
+      internalID: 5323342027291524483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Wayang_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0
+        width: 94
+        height: 117
+      alignment: 9
+      pivot: {x: 0.6237988, y: 0.3466036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bcce8420ba8c470800000000000000
+      internalID: 8415163930043534148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Wayang_6
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 94
+        height: 117
+      alignment: 9
+      pivot: {x: 0.60200274, y: 0.17569627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859950e498fa9aa10800000000000000
+      internalID: 1921259720304597336
       vertices: []
       indices: 
       edges: []
@@ -288,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cfb9192fbd058e34dabf3e13581dc33d
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Werkudara_wayang_0: -3287736402497064352
-      Werkudara_wayang_1: -2404526860778239762
-      Werkudara_wayang_2: -3956670211133453228
-      Werkudara_wayang_3: -7729118690497370422
-      Werkudara_wayang_4: -498659129625318295
-      Werkudara_wayang_5: 2741011428456089998
-      Werkudara_wayang_6: 4333413607509697879
+      Enemy_Wayang_0: 2530210890072717632
+      Enemy_Wayang_1: 3147393945805978277
+      Enemy_Wayang_2: 525300838025677419
+      Enemy_Wayang_3: 5453582635355822865
+      Enemy_Wayang_4: 5323342027291524483
+      Enemy_Wayang_5: 8415163930043534148
+      Enemy_Wayang_6: 1921259720304597336
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
