@@ -218,10 +218,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 795857416}
-        m_TargetAssemblyTypeName: PolinemaNegeriMalang.AmartaBinangun.Core.Combat.DealController,
+      - m_Target: {fileID: 2087772263}
+        m_TargetAssemblyTypeName: PolinemaNegeriMalang.AmartaBinangun.Core.Combat.AttackSequenceController,
           Assembly-CSharp
-        m_MethodName: Attack
+        m_MethodName: StartSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1047,17 +1047,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792045685}
   m_CullTransparentMesh: 1
---- !u!114 &795857416 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8812958882462336477, guid: fa1aea61b532da340ab789b2f5857e3a, type: 3}
-  m_PrefabInstance: {fileID: 8889194197094669930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2acfbbd3ffb716408a1db95571860cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1220285271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1061,7 @@ GameObject:
   - component: {fileID: 1220285275}
   - component: {fileID: 1220285277}
   - component: {fileID: 1220285276}
+  - component: {fileID: 1220285278}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -1185,7 +1175,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220285271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfce480739c1b3a498702312c7c1495e, type: 3}
   m_Name: 
@@ -1200,7 +1190,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220285271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a30fa8f2f82850f47b74f0c3f5225882, type: 3}
   m_Name: 
@@ -1208,6 +1198,20 @@ MonoBehaviour:
   _transform: {fileID: 1220285274}
   _moveDuration: 0.5
   _cellSize: 1
+--- !u!114 &1220285278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220285271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e265093030b885c43ac3a47e2057ff53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToKill: {fileID: 1220285271}
+  healthController: {fileID: 1220285275}
 --- !u!1 &1241275100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2216,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2087772263 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4937499402635773957, guid: fa1aea61b532da340ab789b2f5857e3a, type: 3}
+  m_PrefabInstance: {fileID: 8889194197094669930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28574a8878557144aa2c9f2c10776b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3801159645730991634
 PrefabInstance:
   m_ObjectHideFlags: 0

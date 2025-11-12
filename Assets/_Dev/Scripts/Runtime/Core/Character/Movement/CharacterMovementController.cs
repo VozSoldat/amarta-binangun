@@ -26,12 +26,18 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
             }
         }
 
+        private bool _isKeyDown = false;
+
         void Update()
         {
+
             if (Input.GetKeyDown(KeyCode.A))
             {
                 MoveLeft();
             }
+
+
+
             if (Input.GetKeyDown(KeyCode.D))
             {
                 MoveRight();
@@ -65,8 +71,7 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Movement
 
                 _locomotion.Move(direction);
 
-                if(SequenceManager.Instance != null)
-                    SequenceManager.Instance.ProgressSequence();
+                SequenceManager.Instance.ProgressSequence();
             }
             else
             {

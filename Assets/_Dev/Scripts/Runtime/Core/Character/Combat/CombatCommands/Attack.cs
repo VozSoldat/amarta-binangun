@@ -36,7 +36,11 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.Combat
 
             OnAttackStart?.Invoke();
 
-            targettedOccupants.ForEach(o => o.GetComponent<IDamagable>().ApplyDamage(_data.Damage));
+            targettedOccupants.ForEach(o =>
+            {
+                if (o != null)
+                    o.GetComponent<IDamagable>().ApplyDamage(_data.Damage);
+            });
 
             OnAttackEnd?.Invoke();
         }
