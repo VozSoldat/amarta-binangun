@@ -9,6 +9,11 @@ namespace PolinemaNegeriMalang.AmartaBinangun.Core.OccupiableBoard
 
         public bool IsOccupied => Occupant != null;
 
+        void Update()
+        {
+            Debug.Log("Cell " + Index + " is " + (IsOccupied ? "occupied by " + Occupant.gameObject.name : "empty"));
+        }
+
         public void SetOccupant(CellOccupantController occupant)
         {
             Occupant = occupant;
